@@ -782,7 +782,7 @@ z-index: 4;
    .plate::before {
     width: 66.2vmin;
     height: 66.2vmin;
-    background: #f6f6f6;
+    background: #f6f6f5;
     left: 0.9vmin;
     border-radius: 50%;
 }
