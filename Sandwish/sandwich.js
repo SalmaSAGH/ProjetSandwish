@@ -25,7 +25,7 @@ $(document).ready(function(){
       $('.breadtotal').fadeIn();
       $('.container1').remove();
 
-      $('h4').html('Your meal is ready.....<br> Good appetite!!!');
+      $('h4').html('Your meal is ready....<br> Good appetite!!!');
       $('h4').css('text-align', 'center');
     }
   });
