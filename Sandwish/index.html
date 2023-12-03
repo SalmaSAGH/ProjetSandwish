@@ -1,27 +1,95 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>Sandwich Builder</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style.css" >
-    <script></script>
-    </head>
-    <body>
-      <div class="img">
-            <div class="plate"></div>
 
-           <div class="bread before"></div>
-            <div class="bread-top before"></div>
-            <div class="bread-bubble-1 before"></div>
-            <div class="bread-bubble-2 before"></div>
-            <div class="bread-bubble-3 before"></div>
-            <div class="bread-bubble-4 before"></div>
-            <div class="bread-bubble-5 before"></div>
-            <div class="bread-bubble-6 before"></div>
-            <div class="bread-bubble-7 before"></div>
-            
-           
-    </div>
+<head>
+    <title>Sandwich</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="sandwich.js"></script>
+</head>
+
+<body>
     
-    </body>
+    <div class="img"> 
+
+
+        <h4 class="parag">Choose your meal ingredients</h4>
+        <div class="container1">
+
+            <input type="checkbox" class="link-steak" name="toppings" /><label class="label1">cheese</label>
+            <input type="checkbox" class="link-cheese" name="toppings" /><label class="label2">steak</label>
+            <input type="checkbox" class="link-tomato" name="toppings" /><label class="label3">tomato</label>
+            <input type="checkbox" class="link-salad" name="toppings" /><label class="label4">salad</label>
+            <input type="checkbox" class="link-cucumber" name="toppings" /><label class="label5">cucumber</label>
+            <input type="checkbox" class="link-mayo" name="toppings" /><label class="label6">mayonnaise</label>
+
+            <input type="submit" class="btn" value="Validate" />
+        </div>
+        
+    
+        <div class="plate">
+            <div class="breadtotal">
+                <div class="bread before"></div>
+                <div class="bread-top before"></div>
+
+                <div class="bread-bubble-1 before"></div>
+                <div class="bread-bubble-2 before"></div>
+                <div class="bread-bubble-3 before"></div>
+                <div class="bread-bubble-4 before"></div>
+                <div class="bread-bubble-5 before"></div>
+                <div class="bread-bubble-6 before"></div>
+                <div class="bread-bubble-7 before"></div>
+            </div> <!---->
+            
+
+
+
+            <div class="cheese"></div>
+            <div class="viande"></div>
+            <div class="tomato">
+                <div class="tomato-inner"></div>
+                <div class="tomato tomato-right">
+                    <div class="tomato-inner"></div>
+                </div>
+            </div>
+            <div class="salad">
+                <div class="salad-1"></div>
+                <div class="salad-2"></div>
+                <div class="salad-3"></div>
+                <div class="salad-4"></div>
+                <div class="salad-5"></div>
+            
+            </div>
+            <div class="mayonnaise">
+            <div class="mayo1"></div>
+            <div class="mayo2"></div>
+            
+            </div>
+            <div class="cucumber">
+                <div class="cucumber-inner"></div>
+            </div>
+            <div class="cucumber cucumber-right">
+                <div class="cucumber-inner"></div>
+            </div>
+
+
+
+         <div class="breadall">
+                <div class="bread "></div>
+                <div class="bread-top "></div>
+
+                <div class="bread-bubble-1 "></div>
+                <div class="bread-bubble-2 "></div>
+                <div class="bread-bubble-3 "></div>
+                <div class="bread-bubble-4 "></div>
+                <div class="bread-bubble-5 "></div>
+                <div class="bread-bubble-6 "></div>
+                <div class="bread-bubble-7 "></div>
+            </div>
+            <!---->
+        </div>
+    </div>
+</body>
+
 </html>
