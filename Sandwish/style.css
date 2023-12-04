@@ -10,8 +10,8 @@
 	margin: auto;
 	top: 80%;
 	background-color: #ffd900;
-	border: 5px solid #ffcb20;
-	border-radius: 20px;
+	border: 5px solid #ffff21;
+	border-radius: 25px;
 	padding: 20px;
 }
 
@@ -493,13 +493,40 @@ z-index: 4;
     z-index: 2;
     width: 29.5vmin;
     height: 28vmin;
-    background: #312b0a;
+    background: rgb(114, 57, 0);
     top: 4vmin;
     left: 2vmin;
     display: none;
     transform: rotate(50deg);
     border-radius: 10%;
 }
+.steak-inner{
+    width: 3vmin;
+    height: 11vmin;
+    background: #442001;
+    top: -7.5vmin;
+    left: 5vmin;
+    transform: rotate(120deg);
+    border-radius: 50%;
+}
+.steak-inner::before{
+    width: 3vmin;
+    height: 11vmin;
+    background: #442001;
+    top: -0.2vmin;
+    left: 4.5vmin;
+    border-radius: 50%;
+}
+.steak-inner::after{
+    width: 3vmin;
+    height: 11vmin;
+    background: #442001;
+    top: -0.2vmin;
+    left: 9vmin;
+    border-radius: 50%;
+}
+
+
 .tomato {
     z-index: 3;
     width: 17.5vmin;
@@ -700,10 +727,10 @@ z-index: 4;
     z-index: 2;
     width: 17.5vmin;
     height: 17.5vmin;
-    background: #bee7ca;
+    background: #61cd82;
     top: -4.8vmin;
     left: -26vmin;
-    border: 1vmin solid #8cdf9f;
+    border: 1vmin solid #7cff9b;
     border-radius: 50%;
     overflow: hidden;
     display: none;
@@ -770,7 +797,7 @@ z-index: 4;
     left: 5vmin;
 }
 .img{
-   background-image: url(promo1.gif);
+   background-image: url(promo.gif);
    background-size : 100px 50px;
    background-size : 100% auto ;
  
@@ -799,5 +826,4 @@ z-index: 4;
 
   }
 }
-
 
