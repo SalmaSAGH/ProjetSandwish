@@ -23,14 +23,14 @@
     left: 0;
     right: -100px;
     bottom: -700px;
-    transform: translateX(-50%);
+    transform: translateX(-49%);
     display: none;
 }
 .btnEat:hover, .btnEat:active{
     box-shadow: 0 0 5px 2px rgb(255, 255, 255);
 }
 
-  /* Preloader */
+  /*Preloader*/
 #preloader {
     position: fixed;
     top: 0;
