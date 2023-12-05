@@ -22,9 +22,10 @@
     margin: auto;
     left: 0;
     right: -100px;
-    bottom: -700px;
-    transform: translateX(-49%);
+    bottom: -550px;
+    transform: translateX(-50%);
     display: none;
+
 }
 .btnEat:hover, .btnEat:active{
     box-shadow: 0 0 5px 2px rgb(255, 255, 255);
@@ -905,7 +906,7 @@ z-index: 4;
   }
 
 .img{ 
-  background-image: url(promo.jpg);
+  background-image: url(promo1.jpg);
   width: 100%;
   height: 100%;
   background-position: center;
