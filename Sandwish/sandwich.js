@@ -1,32 +1,62 @@
-$class1 = ['link-cheese','link-tomato','link-cucumber'];
-$class2 = ['link-steak','link-salad','link-mayo'];
-$lab1 = ['cheese','tomato','cucumber'];
-$lab2 = ['steak','salad',];
-$count = 0;
+// Click on the 'Eat' button
+$(document).ready(function() {
+  $("#btnEat").click(function() {
+    $('.eat').fadeIn();
+  });
+});
+ // function page preloader
 $(document).ready(function(){
+  setTimeout(function() {
+    $('#preloader').fadeOut('slow', function() {
+      $('#preloader').remove();
+    });
+  }, 2900);
+});
+
+
+$(document).ready(function(){
+  var msg=0;
+
+   // Click on the 'Validate' button
+
   $('.btn').click(function(){
+// If no ingredients are selected
     if($count = 0){ 
       $('input[name="toppings"]').prop('checked', false);
-
-      $('.' + $class1[$count]).addClass($class1[$count+1]);
-      $('.' + $class1[$count]).removeClass($class1[$count]);
-
-      $('.' + $class2[$count]).addClass($class2[$count+1]);
-      $('.' + $class2[$count]).removeClass($class2[$count]);
-
-      $('.label1').html($lab1[$count]);
-      $('.label2').html($lab2[$count]);
-      $count += 1;
     }
     else{
+      if($('.link-cheese').prop("checked") == true || $('.link-steak').prop('checked') == true || $('.link-tomato').prop("checked") == true || $('.link-salad').prop('checked') == true || $('.link-cucumber').prop("checked") == true || $('.link-mayo').prop("checked") == true){
       $('.plate').fadeIn();
       $('label').remove();
       $('input').remove();
       $('.breadtotal').fadeIn();
       $('.container1').remove();
-
-      $('h4').html('Your meal is ready....<br> Good appetite!!!');
+      $('h4').html('Your meal is ready.....<br> Good appetite!!!');
       $('h4').css('text-align', 'center');
+      $('.btnEat').fadeIn();
+      
+      }
+
+
+
+  
+      else{
+        
+        if(msg == 0){
+          alert('Please select at least one floor component ❌');
+          msg+=1;
+        }
+        else if(msg == 1){
+          alert('Sir please i told you to choice somthing 😡');
+            msg+=1;
+        }
+        else{
+          alert('Sorry your basket is empty 🤷🏻');
+          $('.container1').remove();
+          $('h4').remove();
+        }
+      }
+      
     }
   });
   $('input').click(function(){
@@ -71,3 +101,6 @@ $(document).ready(function(){
     
   });
 });
+
+
+

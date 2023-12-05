@@ -3,31 +3,49 @@
 
 <head>
     <title>Sandwich</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="sandwich.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="sandwich.js"></script>
 </head>
 
 <body>
     
-    <div class="img"> 
+<!-------------------------Cursor----------------------------------->
 
+<button id="btnEat" class="btnEat">Eat</button>
+
+   <div id="eat" class="eat"></div>
+<div id="preloader">
+    <div id="status"></div>
+</div>
+
+        <div class="img"></div>
+         
+    
 
         <h4 class="parag">Choose your meal ingredients</h4>
+
+
+        <!--------------------------------------Container------------------------------------------->
+        
         <div class="container1">
 
-            <input type="checkbox" class="link-cheese" name="toppings" /><label class="label1">Cheese</label>
-            <input type="checkbox" class="link-steak" name="toppings" /><label class="label2">Steak</label>
-            <input type="checkbox" class="link-tomato" name="toppings" /><label class="label3">Tomato</label>
-            <input type="checkbox" class="link-salad" name="toppings" /><label class="label4">Laitue</label>
-            <input type="checkbox" class="link-cucumber" name="toppings" /><label class="label5">Cucumber</label>
-            <input type="checkbox" class="link-mayo" name="toppings" /><label class="label6">Mayonnaise</label>
+            <input type="checkbox" class="link-steak" name="toppings" /><label class="label1">🧀cheese</label>
+            <input type="checkbox" class="link-cheese" name="toppings" /><label class="label2">🥩steak</label>
+            <input type="checkbox" class="link-tomato" name="toppings" /><label class="label3">🍅tomato</label>
+            <input type="checkbox" class="link-salad" name="toppings" /><label class="label4">🥗salad</label>
+            <input type="checkbox" class="link-cucumber" name="toppings" /><label class="label5">🥒cucumber</label>
+            <input type="checkbox" class="link-mayo" name="toppings" /><label class="label6">🧴mayonnaise</label>
+
+        <!--------------------------------------Button "Validate"------------------------------------------->
 
             <input type="submit" class="btn" value="Validate" />
+            
+            
         </div>
         
-    
+       <!-------------------------------------------Sandwich ingredients-------------------------------------------------------->
+
         <div class="plate">
             <div class="breadtotal">
                 <div class="bread before"></div>
@@ -43,12 +61,16 @@
             </div> 
             
 
-         <!----------------------Update and add (cheese,viande,tomato-inner,salad,mayonnaise,cucumber,breadall) --------------------------->
+
+
+
+
+
 
             <div class="cheese"></div>
             <div class="viande">
             <div class="steak-inner"></div>
-            </div>
+        </div>
             <div class="tomato">
                 <div class="tomato-inner"></div>
             </div>
@@ -61,11 +83,13 @@
                 <div class="salad-3"></div>
                 <div class="salad-4"></div>
                 <div class="salad-5"></div>
+                <div class="salad-6"></div>
+                <div class="salad-7"></div>
+                <div class="salad-8"></div>
+                <div class="salad-9"></div>
             
             </div>
             <div class="mayonnaise">
-            <div class="mayo1"></div>
-            <div class="mayo2"></div>
             
             </div>
             <div class="cucumber">
@@ -89,8 +113,10 @@
                 <div class="bread-bubble-6 "></div>
                 <div class="bread-bubble-7 "></div>
             </div>
+            
         </div>
-    </div>
+    
+
 </body>
 
 </html>

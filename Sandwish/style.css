@@ -1,17 +1,66 @@
+
 * {
     margin:0px;
     padding:0px;
     box-sizing:border-box;
   }
+
+
+  .btnEat {
+    z-index: 100;
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000000;
+    background-color: #f7b526;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    margin: auto;
+    left: 0;
+    right: -100px;
+    bottom: -700px;
+    transform: translateX(-50%);
+    display: none;
+}
+.btnEat:hover, .btnEat:active{
+    box-shadow: 0 0 5px 2px rgb(255, 255, 255);
+}
+
+  /* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fffbf2;
+    z-index: 999;
+}
+
+#status {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    background-image: url('preloader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+}
   .container1{
 	position: absolute;
-	width: 500px;
+	width: 450px;
 	height: 88px;
 	margin: auto;
 	top: 80%;
 	background-color: #ffd900;
-	border: 5px solid #ffff21;
-	border-radius: 25px;
+	border: 5px solid #ffcb20;
+	border-radius: 20px;
 	padding: 20px;
 }
 
@@ -41,8 +90,8 @@ cursor: pointer;
 padding: 3px;
 
 transition: 0.3s all;
-top: 45px;
-left: 50%;
+top: 52px;
+left: 45%;
         
 }
 .mayonnaise{
@@ -62,8 +111,8 @@ left: 50%;
         padding: 3px;
     
         transition: 0.3s all;
-        top: -35px;
-        left: 50%;
+        top: -40px;
+        left: 45%;
                 
         
 }
@@ -78,8 +127,8 @@ left: 50%;
     cursor: pointer;
     padding: 3px;
     transition: 0.3s all;
-    top: 3px;
-    left: 50%;
+    top: 9px;
+    left: 45%;
             
     }
     .link-bread-after{
@@ -126,12 +175,15 @@ margin-left: 8px;
     display: none;
     }
 
+
+
+    
 .label1{
     font-size: 1.2em;
     font-weight: bold;
     color: #000000;
     position: absolute;
-    left: 78%;
+    left: 75%;
     margin-top: 50px;
     bottom: 10px;
     }
@@ -141,7 +193,7 @@ margin-left: 8px;
         color: #000000;
         position: absolute;
         left:8%;
-        margin-top: 50px;
+        margin-top: 48px;
         bottom: 10px;
          
     }
@@ -151,7 +203,7 @@ margin-left: 8px;
         color: #000000;
         position: absolute;
         left:8%;
-        margin-top: 30px;
+        margin-top: 26px;
         bottom: 10px;
 
     }
@@ -161,7 +213,7 @@ margin-left: 8px;
         color: #000000;
         position: absolute;
         left:8%;
-        margin-top: 10px;
+        margin-top: 5px;
         bottom: 10px;
 
     }
@@ -170,17 +222,17 @@ margin-left: 8px;
         font-weight: bold;
         color: #000000;
         position: absolute;
-        left: 78%;
+        left: 75%;
         margin-top: 30px;
         bottom: 10px;
         }
         .label6{
-            font-size: 1.2em;
+            font-size: 1.1em;
             font-weight: bold;
             color: #000000;
             position: absolute;
-            left: 78%;
-            margin-top: 10px;
+            left: 74%;
+            margin-top: 5px;
             bottom: 10px;
             }
     .btn{
@@ -194,6 +246,7 @@ margin-left: 8px;
         background-color: #000000;
         outline: none;
         border: none;
+        cursor: pointer;
         border-radius: 20px;
         margin: auto;
         margin-top: 40px;
@@ -203,6 +256,8 @@ margin-left: 8px;
     .btn:hover, .btn:active{
         box-shadow: 0 0 5px 2px rgb(255, 255, 255);
     }
+    
+  
     
 html, body {
     width: 100%;
@@ -489,17 +544,8 @@ z-index: 4;
     display: none;
     transform: rotate(50deg);
 }
-.viande {
-    z-index: 2;
-    width: 29.5vmin;
-    height: 28vmin;
-    background: rgb(114, 57, 0);
-    top: 4vmin;
-    left: 2vmin;
-    display: none;
-    transform: rotate(50deg);
-    border-radius: 10%;
-}
+
+
 .steak-inner{
     width: 3vmin;
     height: 11vmin;
@@ -525,8 +571,17 @@ z-index: 4;
     left: 9vmin;
     border-radius: 50%;
 }
-
-
+.viande {
+    z-index: 2;
+    width: 29.5vmin;
+    height: 28vmin;
+    background: #5c2c02;
+    top: 4vmin;
+    left: 2vmin;
+    display: none;
+    transform: rotate(50deg);
+    border-radius: 10%;
+}
 .tomato {
     z-index: 3;
     width: 17.5vmin;
@@ -569,27 +624,17 @@ z-index: 4;
     top: 14.5vmin;
     left: 18.5vmin;
 }
-.mayo1{
 
-    z-index: 3;
-    width: 2.6vmin;
-    height: 10vmin;
+.mayonnaise{
+    z-index: 2;
+    width: 25vmin;
+    height: 25vmin;
+    border-radius: 30%;
     background: #ffffff;
-    top: -30.3vmin;
-    left: 30vmin;
-    transform: rotate(90deg);
-    border-radius: 50vmin 10vmin 0 0;
-}
-.mayo2{
-
-    z-index: 3;
-    width: 2.6vmin;
-    height: 10vmin;
-    background: #ffffff;
-    top: -25.3vmin;
-    left: 34vmin;
-    transform: rotate(90deg);
-    border-radius: 50vmin 10vmin 0 0;
+    top: 4vmin;
+    left: 2.5vmin;
+    display: none;
+    transform: rotate(50deg);
 }
 
 
@@ -721,16 +766,68 @@ z-index: 4;
     transform: rotate(-35deg);
     border-radius: 0 0 5vmin 5vmin;
 }
-
-
+.salad-6 {
+    z-index: 3;
+    width: 2.6vmin;
+    height: 10vmin;
+    background: #88b54f;
+    top: 6px;
+    left: 6px;
+    transform: rotate(90deg);
+    border-radius: 50vmin 10vmin 0 0;
+}
+.salad-6::before {
+    width: 5vmin;
+    height: 10vmin;
+    background: #88b54f;
+    left: 10vmin;
+    transform: rotate(20deg);
+    border-radius: 90% 20% 0 0;
+ }
+ .salad-6::after {
+    width: 2vmin;
+    height: 5vmin;
+    background: #88b54f;
+    top: -1vmin;
+    left: 2.5vmin;
+    transform: rotate(-35deg);
+    border-radius: 0 0 5vmin 5vmin;
+}
+.salad-7 {
+    z-index: 3;
+    width: 2.6vmin;
+    height: 10vmin;
+    background: #88b54f;
+    top: -70px;
+    right: 30%;
+    transform: rotate(90deg);
+    border-radius: 50vmin 10vmin 0 0;
+}
+.salad-7::before {
+    width: 5vmin;
+    height: 10vmin;
+    background: #88b54f;
+    left: 10vmin;
+    transform: rotate(20deg);
+    border-radius: 90% 20% 0 0;
+ }
+ .salad-7::after {
+    width: 2vmin;
+    height: 5vmin;
+    background: #88b54f;
+    top: -1vmin;
+    left: 2.5vmin;
+    transform: rotate(-35deg);
+    border-radius: 0 0 5vmin 5vmin;
+}
 .cucumber {
     z-index: 2;
     width: 17.5vmin;
     height: 17.5vmin;
-    background: #61cd82;
+    background: #bee7ca;
     top: -4.8vmin;
     left: -26vmin;
-    border: 1vmin solid #7cff9b;
+    border: 1vmin solid #82e098;
     border-radius: 50%;
     overflow: hidden;
     display: none;
@@ -796,20 +893,33 @@ z-index: 4;
     top: 2vmin;
     left: 5vmin;
 }
-.img{
-   background-image: url(promo1.gif);
-   background-size : 100px 50px;
-   background-size : 100% auto ;
- 
-  
-    
+
+.eat{ 
+    z-index: 999;
+    background-image: url(eatSandwich.gif);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover; 
+    display: none; 
+  }
+
+.img{ 
+  background-image: url(promo.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;  
 }
+
+
+
 
 @media (max-width:500px) {
    .plate::before {
     width: 66.2vmin;
     height: 66.2vmin;
-    background: #f6f6f5;
+    background: #f6f6f6;
     left: 0.9vmin;
     border-radius: 50%;
 }
@@ -826,4 +936,5 @@ z-index: 4;
 
   }
 }
+
 
