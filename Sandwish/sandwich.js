@@ -1,10 +1,10 @@
-// Click on the 'Eat' button
+// Click on the 'Eat' button.
 $(document).ready(function() {
   $("#btnEat").click(function() {
     $('.eat').fadeIn();
   });
 });
- // function page preloader
+ // function page preloader.
 $(document).ready(function(){
   setTimeout(function() {
     $('#preloader').fadeOut('slow', function() {
@@ -17,10 +17,10 @@ $(document).ready(function(){
 $(document).ready(function(){
   var msg=0;
 
-   // Click on the 'Validate' button
+   // Click on the 'Validate' button.
 
   $('.btn').click(function(){
-// If no ingredients are selected
+// If no ingredients are selected.
     if($count = 0){ 
       $('input[name="toppings"]').prop('checked', false);
     }
