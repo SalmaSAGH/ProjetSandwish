@@ -589,7 +589,7 @@ z-index: 4;
     height: 17.5vmin;
     background: #af050a;
     top: -15.8vmin;
-    left: -18vmin;
+    left: -12vmin;
     border-radius: 50%;
     border: 1vmin solid #a40001;
     overflow: hidden;
@@ -624,6 +624,10 @@ z-index: 4;
 .tomato-right {
     top: 14.5vmin;
     left: 18.5vmin;
+}
+.tomato-left {
+    top: 20vmin;
+    right: 05vmin;
 }
 
 .mayonnaise{
