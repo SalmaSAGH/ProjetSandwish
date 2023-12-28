@@ -3,6 +3,7 @@
 
 <head>
     <title>Sandwich</title>
+    <link href="logopage.ico" rel="icon" type="image/icon">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="sandwich.js"></script>
@@ -10,15 +11,15 @@
 
 <body>
     
-
-
+<!------------------------Button refresh------------------------->
+<button id="Close" onclick="reloadPage()" class="Close">Close</button>
 <button id="btnEat" class="btnEat">Eat</button>
-<!----------afficher l'image (eat) et le pré-chargement (preloader)------------->
+
    <div id="eat" class="eat"></div>
 <div id="preloader">
     <div id="status"></div>
 </div>
-<!--------cette classe est uriliser pour afficher une image------------->
+
         <div class="img"></div>
          
     
@@ -36,6 +37,10 @@
             <input type="checkbox" class="link-salad" name="toppings" /><label class="label4">🥗salad</label>
             <input type="checkbox" class="link-cucumber" name="toppings" /><label class="label5">🥒cucumber</label>
             <input type="checkbox" class="link-mayo" name="toppings" /><label class="label6">🧴mayonnaise</label>
+           <!-- <input type="button" id="add-steak" class="add-steak-btn" value="+" name="toppings" />
+           <input type="button" id="rem-steak" class="rem-steak-btn"  name="toppings" value="-" />--> 
+            <button id="rem-steak" class="rem-steak-btn"  name="toppings" >-</button>
+            <button id="add-steak" class="add-steak-btn"  name="toppings" >+</button>
 
         <!--------------------------------------Button "Validate"------------------------------------------->
 
@@ -68,16 +73,12 @@
 
 
             <div class="cheese"></div>
-            <div class="viande">
-            <div class="steak-inner"></div>
-        </div>
+            <div class="viande"></div>
+            <div class="viande2"></div>
             <div class="tomato">
                 <div class="tomato-inner"></div>
             </div>
             <div class="tomato tomato-right">
-                <div class="tomato-inner"></div>
-            </div>
-            <div class="tomato tomato-left">
                 <div class="tomato-inner"></div>
             </div>
             <div class="salad">
@@ -101,12 +102,6 @@
             <div class="cucumber cucumber-right">
                 <div class="cucumber-inner"></div>
             </div>
-            <div class="cucumber cucumber-mini">
-                <div class="cucumber-inner"></div>
-            </div>
-            <div class="cucumber cucumber-left">
-                <div class="cucumber-inner"></div>
-            </div>
 
 
 
@@ -125,7 +120,7 @@
             
         </div>
     
-
+        
 </body>
 
 </html>
