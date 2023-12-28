@@ -645,7 +645,7 @@ z-index: 4;
 
 
 .salad-1 {
-    z-index: 3;
+    z-index: 8;
     width: 2.6vmin;
     height: 10vmin;
     background: #abe460;
@@ -890,11 +890,37 @@ z-index: 4;
     border-radius: 50%;
 }
 .cucumber-right {
+    width: 20vmin;
+    height: 20vmin;
     top: -8vmin;
-    left: 31.5vmin;
+    left: 25vmin;
     transform: scale(0.75) rotate(130deg);
 }
 .cucumber-right::after {
+    top: 2vmin;
+    left: 5vmin;
+}
+.cucumber-left {
+    width: 23vmin;
+    height: 23vmin;
+    top: 20vmin;
+    left: 6vmin;
+    transform: scale(0.75) rotate(130deg);
+    
+}
+.cucumber-left::after {
+    top: 2vmin;
+    left: 5vmin;
+}
+.cucumber-mini {
+    width: 15.5vmin;
+    height: 15.5vmin;
+    top: -25vmin;
+    left: 1vmin;
+    transform: scale(0.75) rotate(130deg);
+    
+}
+.cucumber-mini::after {
     top: 2vmin;
     left: 5vmin;
 }
