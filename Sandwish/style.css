@@ -609,11 +609,36 @@ z-index: 4;
     display: none;
     transform: rotate(50deg);
 }
+.steak-inner{
+    width: 3vmin;
+    height: 11vmin;
+    background: #442001;
+    top: -7.5vmin;
+    left: 5vmin;
+    transform: rotate(120deg);
+    border-radius: 50%;
+}
+.steak-inner::before{
+    width: 3vmin;
+    height: 11vmin;
+    background: #442001;
+    top: -0.2vmin;
+    left: 4.5vmin;
+    border-radius: 50%;
+}
+.steak-inner::after{
+    width: 3vmin;
+    height: 11vmin;
+    background: #442001;
+    top: -0.2vmin;
+    left: 9vmin;
+    border-radius: 50%;
+}
 .viande {
     z-index: 2;
     width: 29.5vmin;
     height: 28vmin;
-    background: #312b0a;
+    background: #5c2c02;
     top: 4vmin;
     left: 2vmin;
     display: none;
@@ -624,7 +649,7 @@ z-index: 4;
     z-index: 2;
     width: 29.5vmin;
     height: 28vmin;
-    background: #312b0a;
+    background: #5c2c02;
     top: 4vmin;
     left: 2vmin;
     display: block;
@@ -674,7 +699,10 @@ z-index: 4;
     top: 14.5vmin;
     left: 18.5vmin;
 }
-
+.tomato-left {
+    top: 20vmin;
+    right: 05vmin;
+}
 .mayonnaise{
     z-index: 2;
     width: 20vmin;
@@ -943,6 +971,30 @@ z-index: 4;
     top: 2vmin;
     left: 5vmin;
 }
+.cucumber-left {
+    width: 23vmin;
+    height: 23vmin;
+    top: 20vmin;
+    left: 6vmin;
+    transform: scale(0.75) rotate(130deg);
+    
+}
+.cucumber-left::after {
+    top: 2vmin;
+    left: 5vmin;
+}
+.cucumber-mini {
+    width: 15.5vmin;
+    height: 15.5vmin;
+    top: -25vmin;
+    left: 1vmin;
+    transform: scale(0.75) rotate(130deg);
+    
+}
+.cucumber-mini::after {
+    top: 2vmin;
+    left: 5vmin;
+}
 
 .eat{ 
     z-index: 200;
@@ -986,5 +1038,4 @@ z-index: 4;
 
   }
 }
-
 
